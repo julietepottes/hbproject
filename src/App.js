@@ -1,44 +1,31 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Home from './pages/Home';
+import React, { Fragment } from 'react';
+// import Home from './pages/Home';
+import "@hbsis.uikit/react/dist/uikit.css";
+import { ThemeProvider, DefaultTheme, GlobalStyle } from "@hbsis.uikit/react";
 import './App.css';
+import Dash from './components/Dash';
+import Nav from './components/Nav';
+import Header from './components/Header';
+import Menu from './components/Menu';
+import Panel from './components/Panel';
 
-
-
-class App extends React.Component {
-
-  render() {
-
-    return (
-      <Router>
-        <Route path="/" component={Home} />
-      </Router>
-    );
-  }
-}
-
-
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+const App = () => (
+  <ThemeProvider theme={DefaultTheme}>
+    <Fragment>
+      <GlobalStyle />
+      < div className="home" >
+        <div className="dash"><Dash /></div>
+        <div className="nav-header">
+          <div><Nav /></div>
+          <div><Header /></div>
+        </div>
+        <div className="menu-panel">
+          <div><Menu /></div>
+          <div><Panel /></div>
+        </div>
+      </div>
+    </Fragment>
+  </ThemeProvider>
+);
 
 export default App;

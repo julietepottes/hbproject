@@ -1,9 +1,8 @@
 import React from 'react';
-import './Dash.css';
-// import "@hbsis.uikit/react/dist/uikit.css";
+import './MenuList.css';
 
 
-class Dash extends React.Component {
+class MenuList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -18,4 +17,4 @@ class Dash extends React.Component {
   }
 }
 
-export default Dash;
+export default MenuList;

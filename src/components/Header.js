@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import { Button } from '@hbsis.uikit/react';
 
 class Header extends React.Component {
   constructor(props) {
@@ -10,7 +11,9 @@ class Header extends React.Component {
   render() {
     return (
       <div className="myHeader">
-
+        <Button width="200px" type="primary">
+          Botão
+        </Button>
       </div>
     );
   }
