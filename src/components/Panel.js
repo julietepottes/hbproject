@@ -2,7 +2,7 @@ import React from 'react';
 import './Dash.css';
 
 
-class Dash extends React.Component {
+class Panel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -11,10 +11,10 @@ class Dash extends React.Component {
   render() {
     return (
       <div className="Header">
-          <p>Teste</p>
+
       </div>
     );
   }
 }
 
-export default Dash;
+export default Panel;
