@@ -1,5 +1,4 @@
 import React from 'react';
-import './Header.css';
 import { Button } from '@hbsis.uikit/react';
 import HeaderStyled from "./HeaderStyled";
 
