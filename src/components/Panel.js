@@ -1,8 +1,9 @@
 import React from 'react';
-import './Dash.css';
+import './Panel.css';
 import "@hbsis.uikit/react/dist/uikit.css";
-import { Card, CardHeader, CardContent, CardFooter, Button, Badge } from '@hbsis.uikit/react';
+import { Card, CardHeader, CardContent, CardFooter, Button } from '@hbsis.uikit/react';
 // import Table from './Table';
+// import styled from 'styled-components'
 
 class Panel extends React.Component {
   constructor(props) {
@@ -13,8 +14,8 @@ class Panel extends React.Component {
   render() {
     return (
       <div className="Header">
-        <Card>
-          <CardHeader title="Horários" custom={<Badge />} />
+        <Card className="panel-card">
+          <CardHeader title="Horários"/>
           <CardContent>
             <div>Tabela</div>
           </CardContent>

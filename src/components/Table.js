@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { boolean, color, select } from '@storybook/addon-knobs/react';
-import { storiesOf } from '@storybook/react';
+// import { boolean, color, select } from '@storybook/addon-knobs/react';
+// import { storiesOf } from '@storybook/react';
 import { Table, TableHeader, TableRow, TableCol } from '@hbsis.uikit/react';
 
 
