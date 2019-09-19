@@ -10,9 +10,11 @@ class MenuList extends React.Component {
 
   render() {
     return (
-      <div className="Header">
+      <MenuListStyled>
+        <div className="Header">
 
-      </div>
+        </div>
+      </MenuListStyled>
     );
   }
 }

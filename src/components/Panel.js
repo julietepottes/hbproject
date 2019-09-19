@@ -1,9 +1,7 @@
 import React from 'react';
-import './Panel.css';
+import PanelStyled from "./PanelStyled";
 import "@hbsis.uikit/react/dist/uikit.css";
 import { Card, CardHeader, CardContent, CardFooter, Button } from '@hbsis.uikit/react';
-// import Table from './Table';
-// import styled from 'styled-components'
 
 class Panel extends React.Component {
   constructor(props) {
@@ -13,22 +11,24 @@ class Panel extends React.Component {
 
   render() {
     return (
-      <div className="Header">
-        <Card className="panel-card">
-          <CardHeader title="Horários"/>
-          <CardContent>
-            <div>Tabela</div>
-          </CardContent>
-          <CardFooter>
-            <Button type="secondary" width="120px">
-              Cancelar
+      <PanelStyled>
+        <div className="Header">
+          <Card className="panel-card">
+            <CardHeader title="Horários" />
+            <CardContent>
+              <div>Tabela</div>
+            </CardContent>
+            <CardFooter>
+              <Button type="secondary" width="120px">
+                Cancelar
             </Button>
-            <Button type="primary" width="120px">
-              Salvar
+              <Button type="primary" width="120px">
+                Salvar
             </Button>
-          </CardFooter>
-        </Card>
-      </div>
+            </CardFooter>
+          </Card>
+        </div>
+      </PanelStyled>
     );
   }
 }

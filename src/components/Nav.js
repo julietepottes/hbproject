@@ -1,5 +1,6 @@
 import React from 'react';
 import './Nav.css';
+import NavStyled from './NavStyled'
 
 
 class Nav extends React.Component {
@@ -10,9 +11,11 @@ class Nav extends React.Component {
 
   render() {
     return (
-      <div className="myNav">
-        <p>Oi turu bom?</p>
-      </div>
+      <NavStyled>
+        <div className="myNav">
+          <p>Oi turu bom?</p>
+        </div>
+      </NavStyled>
     );
   }
 }

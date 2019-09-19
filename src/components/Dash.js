@@ -1,8 +1,6 @@
 import React from 'react';
-import './Dash.css';
+import DashStyled from './DashStyled';
 // import "@hbsis.uikit/react/dist/uikit.css";
-// import styled from 'styled-components'
-
 
 class Dash extends React.Component {
   constructor(props) {
@@ -12,9 +10,11 @@ class Dash extends React.Component {
 
   render() {
     return (
-      <div className="menu-dash">
+      <DashStyled>
+        <div className="menu-dash">
 
-      </div>
+        </div>
+      </DashStyled>
     );
   }
 }
