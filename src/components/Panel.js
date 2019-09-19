@@ -2,6 +2,8 @@ import React from 'react';
 import PanelStyled from "./PanelStyled";
 import "@hbsis.uikit/react/dist/uikit.css";
 import { Card, CardHeader, CardContent, CardFooter, Button } from '@hbsis.uikit/react';
+// import DataTable from '../DataTable/DataTable'
+// import Data from '../DataTable/Data'
 
 class Panel extends React.Component {
   constructor(props) {
@@ -16,7 +18,7 @@ class Panel extends React.Component {
           <Card className="panel-card">
             <CardHeader title="Horários" />
             <CardContent>
-              <div>Tabela</div>
+              {/* <DataTable /> */}
             </CardContent>
             <CardFooter>
               <Button type="secondary" width="120px">
